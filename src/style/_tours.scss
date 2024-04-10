@@ -1,0 +1,145 @@
+
+.tours {
+    background-image: url('../img/tours/tours-desktop.jpeg');
+    @include background(cover,center,no-repeat);
+}
+.tours-list {
+    width: 100%;
+    overflow: hidden;
+   
+}
+.list-item {
+    background: transparent;
+    padding: 2rem 3rem;
+}
+.list-item:nth-child(even) {
+    background-color: $white;
+    color: $blue;
+}
+.tour-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+.tour-number {
+    font-size: 13rem;
+    font-weight: 700;
+    color: #FC55214D;
+    padding: 2rem 1rem;
+    margin-bottom: -11.5rem;
+    text-align: center;
+}
+.tour-name {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.tour-description {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.tour-photo img {
+    width: 100%;
+}
+
+.tour-button {
+    color: $orange;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    text-align: start;
+    margin-left: 1rem;
+}
+.tour-button span {
+    margin-left: 2rem;
+}
+
+@media all and (min-width:992px) {
+    .tours {
+        background-image: url('../img/tours/tours-mobile.jpeg');
+        @include background(cover,center,no-repeat);
+    }
+    .tours-list {
+        width: 100%; 
+        overflow: hidden;
+    }
+    .list-item {
+        width: 100%;
+        background: transparent;
+        padding: 2rem 3rem;
+    }
+   
+    .list-item:nth-child(even) {
+        background-color: transparent;
+        color: white;
+    }
+   
+    .tour-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        'number photo'
+        'name photo'
+        'description photo'
+        'button photo'
+        ;
+        gap: 1rem;
+        width: 100%;
+    }
+    .reverse {
+        grid-template-areas:
+        'photo number'
+        'photo name'
+        'photo description'
+        'photo button'
+        ;
+    }
+    .tour-number {
+        align-items: end;
+        width: 50%;
+        font-size: 13rem;
+        font-weight: 700;
+        color: #FC55214D;
+        padding: 0;
+        grid-area: number;
+        margin-bottom:-11rem;
+    }
+    .tour-name {
+        align-items: end;
+        width: 50%;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        grid-area: name;
+         margin: 0 auto;
+    }
+    .tour-description {
+        align-items: end;
+        width: 50%;
+        font-size: 1rem;
+        font-weight: 400;
+        grid-area: description;
+         margin: 0 auto;
+    }
+    .tour-photo{
+        grid-area: photo;
+        margin: auto;
+    }
+    .tour-photo img {
+        border-radius: 0px 100px 0px 100px;
+    }
+   
+    
+    .tour-button {
+        color: $orange;
+        border: none;
+        background-color: transparent;
+        font-size: 2rem;
+        grid-area: button;
+        margin: 0 auto;
+    }
+    .tour-button span {
+        margin-left: 2rem;
+    }
+}

@@ -1,0 +1,61 @@
+ .contacts-header {
+   background-image: url('../img/contacts/contact-descktop-bg.jpeg');
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   border-radius: 0;
+}
+.contact-content {
+    display:flex;
+    flex-direction: column;
+    padding: 0;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 1rem;
+    margin: 0 auto;
+    border-radius: 20px;
+    backdrop-filter: blur(7px);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.contact-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url('../img/contacts/contact-block-bg.png');
+    @include background(cover,center,no-repeat);
+    padding: 2rem 1rem;
+}
+.phone-block,.mail-block,.adress-block,.social  {
+    display: flex;
+    justify-content: space-around;
+}
+.contact-block p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.map-block {
+    height: 770px;
+}
+
+@media all and (min-width:992px) {
+    .contact-content {
+        flex-direction: row;
+        width: 100%;
+        padding: 5rem;
+    }
+    .contact-block {
+        width: 50%;
+        order: 2;
+    }
+    .map-block {
+        width: 50%;
+        order:1;
+    }
+}

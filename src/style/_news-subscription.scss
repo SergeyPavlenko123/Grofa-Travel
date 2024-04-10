@@ -1,0 +1,36 @@
+.news-subscription {
+    display: none;
+}
+
+@media all and (min-width:992px) {
+    .news-subscription {
+        display: block;
+        padding: 2rem;
+    }
+    .news-subscription img {
+        width: 100%;
+    }
+    .news-subscription-heading {
+        padding: 2rem 0;
+    }
+    .news-subscription form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    .news-subscription input[type="email"] {
+        width: 30rem;
+        padding: 15px 30px  ;
+        border-radius: 50px 0 0 50px;
+        border: none;
+        text-align: center;
+    }
+    .news-subscription  .button {
+        border-radius:  0 50px 50px  0 ;
+        text-align: center;
+        padding: 15px;
+        margin: 0;
+        ;
+    }
+}

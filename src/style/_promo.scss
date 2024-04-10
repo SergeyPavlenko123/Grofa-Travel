@@ -1,0 +1,22 @@
+.promo {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../img/promo/promo-bg.jpeg');
+    @include background(cover,center,no-repeat);
+    padding: 10px;
+    h2 {
+        margin-top:8rem;
+        font-size: 2rem;
+        font-weight: 800;   
+    }
+}
+
+@media all and (min-width:576px) {
+    .promo {
+     background: transparent;
+     align-items: center;
+     margin-top: 0;
+    }
+}
+

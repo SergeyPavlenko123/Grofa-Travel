@@ -1,0 +1,28 @@
+.button {
+    background-color: $orange;
+    color: $white;
+    border: none;
+    border-radius: 72px;
+    max-width: 280px;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin: auto;
+}
+.white {
+    background-color: $white;
+    color: $orange;
+    border: solid 2px $orange;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.white a {
+    color: $orange;
+}
+
+.favorites-button {
+    border: none;
+    background: transparent;
+    border-bottom: solid 2px $orange;
+}

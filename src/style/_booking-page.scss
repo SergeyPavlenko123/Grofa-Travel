@@ -1,0 +1,108 @@
+.booking-page {
+    background-image: url('../img/booking-page/booking-header.jpeg');
+}
+.booking-form {
+    display: flex;
+}
+
+.booking-form form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    border-radius: 1.25rem;
+    backdrop-filter: blur(0.44rem);
+    background: rgb(119, 140, 146);
+    max-width: 730px;
+    margin: auto;
+}
+.back-block {
+   display: none;
+}
+input,select {
+    padding: 1rem;
+    border:none;
+    border-radius: 5px;
+}
+input[type="checkbox"] {
+    background-color: grey;
+    border-radius: 50%;
+}
+.agreement {
+    display: flex;
+    gap: 1rem;
+}
+.agreemaent-text {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: $black;
+}
+.button {
+    margin: 0 auto;
+}
+
+.submit-booking {
+    width: 100%;
+    height: 100vh;
+}
+.submit-booking .container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    height: 100%;
+}
+.close-button {
+    align-self: flex-end;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background-color: transparent;
+    background-image: url('../img/booking-page/close-button.svg');
+    @include background(cover,center,no-repeat);
+}
+.submit-booking-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+    flex-grow: 1;
+}
+.submit-booking-content p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.submit-booking-content span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+@media all and (min-width:992px) {
+    .booking-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .booking-form form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 2rem 4rem;
+        gap: 2rem;
+        border-radius: 1.25rem;
+        backdrop-filter: blur(0.44rem);
+        background: rgb(119, 140, 146);
+        max-width: 730px;
+        margin: 0;
+    }
+    .back-block {
+        display: block;
+        width: 190px;
+        height: 850px;
+        border-radius: 20px 0px 0px 20px;
+        background: rgba(255, 255, 255, 0.15);
+    }
+    .back-block:last-child {
+        border-radius: 0px 20px 20px 0px;
+    }
+}

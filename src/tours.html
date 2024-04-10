@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../src/style/_main.scss" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+      integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../src/js/tours-page.js" defer></script>
+    <title>Tours</title>
+  </head>
+  <body>
+    <header class="header tours">
+      <div class="nav-bar">
+        <div class="logo">
+          <a href="../src/index.html">
+            <img src="../src/img/header/Logo.png" alt="Grofa" />
+          </a>
+        </div>
+        <nav class="navigation">
+          <div class="nav-top-block">
+            <div class="phone">+38(097)9674976</div>
+            <div class="lang">ua | en</div>
+            <div class="social">
+              <img src="../src/img/header/Facebook.png" alt="Facebook" />
+              <img src="../src/img/header/instagram.png" alt="instagram" />
+            </div>
+          </div>
+          <div class="nav-menu">
+            <ul class="nav-list">
+              <li>
+                <a href="#">Галерея</a>
+              </li>
+              <li>
+                <a href="../src/tours.html">Тури</a>
+              </li>
+              <li>
+                <a href="#">Школа Off-Road</a>
+              </li>
+              <li>
+                <a href="#">Обране</a>
+              </li>
+              <li>
+                <a href="../src/contacts.html">Контакти</a>
+              </li>
+              <li>
+                <a href="#">Про нас</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="mobile-navigation">
+          <button
+            class="btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <img src="../src/img/header/nav-button.png" alt="menu" />
+          </button>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header">
+              <div class="logo">
+                <img src="../src/img/header/Logo.png" alt="" />
+              </div>
+              <button
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <img src="../src/img/header/Close-button.png" alt="close" />
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="nav-list">
+                <li>
+                  <a href="#">Галерея</a>
+                </li>
+                <li>
+                  <a href="../src/tours.html">Тури</a>
+                </li>
+                <li>
+                  <a href="#">Школа Off-Road</a>
+                </li>
+                <li>
+                  <a href="#">Обране</a>
+                </li>
+                <li>
+                  <a href="../src/contacts.html">Контакти</a>
+                </li>
+                <li>
+                  <a href="#">Про нас</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-title">
+        <div class="title-name">Тури</div>
+        <div class="orange-mountain"></div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="tours-list">
+        <div class="list-item" data-aos="fade-right">
+          <div class="tour-item">
+            <div class="tour-number">01</div>
+            <h2 class="tour-name">“Транскарпатія”</h2>
+            <p class="tour-description">
+              Це тур, коли починаються справжні пригоди. Навіть більше, це не
+              просто тур, а справжня експедиція! Водоспади і скелі, сплави на
+              катамаранах та похід в гори, пішки та верхи на конях, підземні
+              бункери та печери, купання в гірських водоспадах та збирання
+              грибів, і звичайно ж смачні полонинські сири та місцева кухня.
+              Зустрінемо схід сонця на вершині та навчимося грати на дримбі...
+            </p>
+            <div class="tour-photo">
+              <img
+                src="../src/img/slider/transkarpatia.jpeg"
+                alt="transkarpatia"
+              />
+            </div>
+            <button class="tour-button" id="0">
+              Детальніше <span>&#8594;</span>
+            </button>
+          </div>
+        </div>
+        <div class="list-item" data-aos="fade-left">
+          <div class="tour-item reverse">
+            <div class="tour-number">02</div>
+            <h2 class="tour-name">“Прекрасні Карпати”</h2>
+            <p class="tour-description">
+              Можна дертися до вершин пішки, та коли ти до неї дістався, то вже
+              не думаєш про фото, а тільки мрієш відновити сили. А можна виїхати
+              з відносним комфортом, розкласти на схилі хребта намет, а зранку
+              застати саме той момент “карпатського моря” з хмар в долинах. А ще
+              крокуси, колиби, вівці, хмари, чорниці, пастухи та все те, чого не
+              побачиш внизу.
+            </p>
+            <div class="tour-photo">
+              <img src="../src/img/slider/karpats.jpeg" alt="transkarpatia" />
+            </div>
+            <button class="tour-button" id="1">
+              Детальніше <span>&#8594;</span>
+            </button>
+          </div>
+        </div>
+        <div class="list-item" data-aos="fade-right">
+          <div class="tour-item">
+            <div class="tour-number">03</div>
+            <h2 class="tour-name">“Опільські горбогори”</h2>
+            <p class="tour-description">
+              Унікальне і надзвичайно потужне джерело в с.Раковець має цілющі
+              властивості та надзвичайний смак! Ви зможете не тільки скуштувати
+              цю особливу воду, а й узяти додому, щоб пригостити рідних. Гори
+              над селищем Стільсько (стольне місто, столиця) зберігають
+              нерозкриті таємниці столиці Білих Хорватів – давніх предків
+              галичан. Жертовний камінь, кам’яні печери-клуні...
+            </p>
+            <div class="tour-photo">
+              <img src="../src/img/slider/opillya.jpeg" alt="transkarpatia" />
+            </div>
+            <button class="tour-button" id="2">
+              Детальніше <span>&#8594;</span>
+            </button>
+          </div>
+        </div>
+        <div class="list-item" data-aos="fade-left">
+          <div class="tour-item reverse">
+            <div class="tour-number">04</div>
+            <h2 class="tour-name">“Прекрасні Карпати”</h2>
+            <p class="tour-description">
+              Унікальна можливість побачити за день Карпати! Можливо й невеличку
+              частину, але ж Карпати! Просто візьміть найнеобхідніше і прихопіть
+              також фотоапарат, бо у цьому джип-турі локації для фото
+              надзвичайні!. З усіх одноденних турів, це наш улюблений. Тут
+              місця, куди хочеться повертатись знову і знову. Маршрут проходить
+              через два надзвичайно мальовничі хребти з розкішними карпатськими
+              краєвидами.
+            </p>
+            <div class="tour-photo">
+              <img
+                src="../src/img/slider/karpats-by-day.jpeg"
+                alt="karpats-by-day"
+              />
+            </div>
+            <button class="tour-button" id="3">
+              Детальніше <span>&#8594;</span>
+            </button>
+          </div>
+        </div>
+        <div class="list-item" data-aos="fade-right">
+          <div class="tour-item">
+            <div class="tour-number">05</div>
+            <h2 class="tour-name">“До Крехова навпростець”</h2>
+            <p class="tour-description">
+              Він, як і більшість Українських чернечих згромаджень, починався з
+              пустельника, який поселився у печері та молитвою і власним
+              прикладом збирав послідовників. Серед надзвичайних лісів Розточчя,
+              помережаних глибочезними ярами, постав Крехівський монастир. По
+              дорозі ми оглянемо також австрійські фортифікаційні споруди кінця
+              ХІХ ст.
+            </p>
+            <div class="tour-photo">
+              <img src="../src/img/slider/krehov.jpeg" alt="krehov" />
+            </div>
+            <button class="tour-button" id="4">
+              Детальніше <span>&#8594;</span>
+            </button>
+          </div>
+        </div>
+        <div class="list-item" data-aos="fade-left">
+          <div class="tour-item reverse">
+            <div class="tour-number">06</div>
+            <h2 class="tour-name">“Зимова Руна”</h2>
+            <p class="tour-description">
+              Можна дертися до вершин пішки, та коли ти до неї дістався, то вже
+              не думаєш про фото, а тільки мрієш відновити сили. А можна виїхати
+              з відносним комфортом, розкласти на схилі хребта намет, а зранку
+              застати саме той момент “карпатського моря” з хмар в долинах. А ще
+              крокуси, колиби, вівці, хмари, чорниці, пастухи та все те, чого не
+              побачиш внизу.
+            </p>
+            <div class="tour-photo">
+              <img src="../src/img/slider/winter-runa.jpeg" alt="winter-runa" />
+            </div>
+            <button class="tour-button" id="5">
+              Детальніше <span>&#8594;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="logo">
+          <a href="../src/index.html">
+            <img src="../src/img/header/Logo.png" alt="Grofa"
+          /></a>
+          <a href="../src/index.html"
+            ><img src="../src/img/footer/black-logo.png" alt="Grofa"
+          /></a>
+        </div>
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-link">
+              <a href="#">Галерея</a>
+            </li>
+            <li class="nav-link">
+              <a href="../src/tours.html">Тури</a>
+            </li>
+            <li class="nav-link">
+              <a href="#"> Школа Off-Road </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">Цікаве</a>
+            </li>
+            <li class="nav-link">
+              <a href="../src/contacts.html">Контакти</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">Про нас</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-heading">Відкрий Україну разом з нами!</div>
+        <div class="footer-contact">
+          <p>контакти</p>
+          <p>+38(097)9674976</p>
+          <p>travel@grofa.club</p>
+        </div>
+        <div class="social">
+          <div>
+            <img
+              value="white"
+              src="../src/img/header/Facebook.png"
+              alt="facebook"
+            />
+            <img
+              value="black"
+              src="../src/img/footer/Facebook-black.png"
+              alt="facebook"
+            />
+          </div>
+          <div>
+            <img
+              value="white"
+              src="../src/img/header/instagram.png"
+              alt="instagram"
+            />
+            <img
+              value="black"
+              src="../src/img/footer/Instagram-black.png"
+              alt="instagram"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

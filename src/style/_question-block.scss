@@ -1,0 +1,59 @@
+
+.question-block {
+    display:none
+}
+
+@media all and (min-width:992px) {
+    .question-block {
+        display: block;
+    }
+    .question-heading {
+        padding: 2rem 0;
+    }
+    .question-heading img {
+        width: 100%;
+    }
+    .question-content {
+        background-image: url('../img/question-block/question-bg.jpeg');
+        @include background(cover,center,no-repeat);
+        border-radius: 0 100px 0 100px;
+        padding: 8rem 0;
+    }
+    .question-block form {
+        display: grid;
+        grid-template-areas: 
+        "name phone"
+        "text text"
+        "button button"
+        ;
+        gap: 1rem;
+        padding: 90px 75px ;
+        border-radius: 20px;
+        backdrop-filter: blur(7px);
+        background: rgba(255, 255, 255, 0.4);
+    }
+    
+    .question-block input,textarea {
+        border-radius: 20px;
+        border: none;
+        background: rgba(255, 255, 255, 0.5);
+        padding: 10px;
+        font-family: Montserrat;
+        font-size: 1.5rem;
+        font-weight: 400;
+        resize: none;
+    }
+    .form-name {
+        grid-area: name;
+    }
+    .form-phone {
+        grid-area:phone
+    }
+    .form-text {
+        grid-area: text;
+    }
+    .question-block button {
+        grid-area: button;
+        margin: auto;
+    }
+}

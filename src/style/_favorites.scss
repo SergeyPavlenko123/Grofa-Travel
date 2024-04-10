@@ -1,0 +1,81 @@
+.favorites-block {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+}
+.favorites-block h1 {
+    text-align: center;
+}
+.favorites-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 485px;
+    height: 610px;
+    @include background(cover,center,no-repeat);
+    border-radius: 0 100px 0 100px;
+    margin: -1rem -1rem 1rem 1rem;
+}
+
+.favorites-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 4rem;
+    gap: 1rem;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 0 0 0 100px;
+    position: relative;
+}
+.favorites-item-content .close-button {
+    width: 1rem;
+    background-image: url("../img/header/Close-button.png");
+    @include background(cover,center,no-repeat);
+    position: absolute;
+    right: 0.5rem;
+    top: 0rem;
+}
+
+@media all and (min-width:992px) {
+    .favorites-block {
+        display: grid;
+         align-self: center;
+         align-items: center;
+         grid-template-columns:repeat(2,1fr);
+         grid-template-rows: repeat(auto,1fr);
+         gap: 3rem;
+         padding: 2rem;
+     }
+     .favorites-block .frame {
+        margin: 0 auto;
+     }
+     
+     .favorites-item {
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-end;
+         max-width: 485px;
+         height: 610px;
+         @include background(cover,center,no-repeat);
+         border-radius: 1rem;
+         margin: 0 auto;
+         border-radius: 0 100px 0 100px;
+         margin: -1rem -1rem 1rem 1rem;
+     }
+    
+     .favorites-item-content {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         padding: 1rem 4rem;
+         gap: 1rem;
+         backdrop-filter: blur(8px);
+         background: rgba(255, 255, 255, 0.6);
+         border-radius: 0 0 0 100px;
+     }
+     
+}
