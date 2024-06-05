@@ -1,5 +1,5 @@
 .tours {
-  background-image: url("../img/tours/tours-desktop.jpeg");
+  background-image: url("../img/tours/tours-mobile.jpeg");
   @include background(cover, center, no-repeat);
 }
 .tours-list {
@@ -56,7 +56,7 @@
 
 @media all and (min-width: 992px) {
   .tours {
-    background-image: url("../img/tours/tours-mobile.jpeg");
+    background-image: url("../img/tours/tours-desktop.jpeg");
     @include background(cover, center, no-repeat);
   }
   .tours-list {

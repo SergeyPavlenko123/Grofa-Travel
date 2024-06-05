@@ -771,7 +771,7 @@ a {
 }
 
 .tours {
-  background-image: url("tours-desktop.c0d81f3e.jpeg");
+  background-image: url("tours-mobile.ea5c64eb.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -839,7 +839,7 @@ a {
 
 @media (width >= 992px) {
   .tours {
-    background-image: url("tours-mobile.ea5c64eb.jpeg");
+    background-image: url("tours-desktop.c0d81f3e.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
