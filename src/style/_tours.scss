@@ -1,5 +1,5 @@
 .tours {
-  display: flex;
+  position: relative;
   background-image: url("../img/tours/tours-mobile.jpeg");
   @include background(cover, center, no-repeat);
 }

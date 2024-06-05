@@ -774,7 +774,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
+  position: relative;
 }
 
 .tours-list {
