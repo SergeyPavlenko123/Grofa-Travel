@@ -2,7 +2,7 @@ let selectedTour;
 let tours = [];
 let favTours = [];
 function showSlider() {
-    fetch("https://run.mocky.io/v3/7ae64052-c659-4c35-b6af-f46601a202a5").then(function(response) {
+    fetch("https://run.mocky.io/v3/c4b1c4d2-4609-462d-92f6-3028807e9f12").then(function(response) {
         return response.json();
     }).then(function(data) {
         tours = data;
