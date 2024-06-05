@@ -1,22 +1,18 @@
 let selectedTour;
-let tours = [
-
-];
+let tours = [];
 let favTours = [];
 
-
-
 function showSlider() {
-    fetch('https://run.mocky.io/v3/7ae64052-c659-4c35-b6af-f46601a202a5')
-      .then(function(response){
-    return response.json()
-  })
-      .then(function(data){
-        tours = data;
-      })
-      .then(function(){
-        for(let i = 0;i < tours.length;i++){
-                        document.querySelector('.owl-carousel').innerHTML += `
+  fetch("https://run.mocky.io/v3/c4b1c4d2-4609-462d-92f6-3028807e9f12")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      tours = data;
+    })
+    .then(function () {
+      for (let i = 0; i < tours.length; i++) {
+        document.querySelector(".owl-carousel").innerHTML += `
                         <div class="frame">
                         <div class="item" style="background-image: url(./img/slider/${tours[i].cover})">
                         <div class="item-content">
@@ -30,41 +26,41 @@ function showSlider() {
                         </div>
                       </div>
                         </div>
-                        `
-                      }
-                      
-                      document.querySelector('.owl-carousel').addEventListener('click',function (el){
-                        let elementId = el.target.id
-                        if(el.target.matches('.favorites-button')) {
-                          favTours.push(tours.find((el)=>el.id == elementId));
-                          localStorage.setItem('favTours',JSON.stringify(favTours))
-                        
-                      }
-                      } )
-                      $('.owl-carousel').owlCarousel({
-                        loop:true,
-                        margin:30,
-                        items:2,
-                        nav:false,
-                        responsive:{
-                          0:{
-                              items:1
-                          },
-                          600:{
-                              items:1
-                          },
-                          992:{
-                              items:2,
-                              nav:true
-                          }
-                      }
-                    })
-                    }
-      )}
+                        `;
+      }
 
- function showFeedbackModal() {
-  document.querySelector('body').innerHTML = 
-  `
+      document
+        .querySelector(".owl-carousel")
+        .addEventListener("click", function (el) {
+          let elementId = el.target.id;
+          if (el.target.matches(".favorites-button")) {
+            favTours.push(tours.find((el) => el.id == elementId));
+            localStorage.setItem("favTours", JSON.stringify(favTours));
+          }
+        });
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        items: 2,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          992: {
+            items: 2,
+            nav: true,
+          },
+        },
+      });
+    });
+}
+
+function showFeedbackModal() {
+  document.querySelector("body").innerHTML = `
   <div class="submit-booking">
   <div class="container">
     <button class="close-button">
@@ -78,10 +74,10 @@ function showSlider() {
     </div>
   </div>
 </div>
-  `
-  document.querySelector('.close-button').onclick = ()=>{location.replace('./index.html')}
- }
-document.querySelector('.question-form').onsubmit = showFeedbackModal;
-  showSlider();
-
-
+  `;
+  document.querySelector(".close-button").onclick = () => {
+    location.replace("./index.html");
+  };
+}
+document.querySelector(".question-form").onsubmit = showFeedbackModal;
+showSlider();
