@@ -1,7 +1,7 @@
 let btns = document.querySelectorAll(".tour-button");
 
 function getData() {
-  fetch("https://run.mocky.io/v3/96104cfc-9c41-48b4-bddf-337ec0def884")
+  fetch("https://run.mocky.io/v3/d641e9e9-a20a-4854-8244-1cf80e759ff7")
     .then(function (response) {
       return response.json();
     })

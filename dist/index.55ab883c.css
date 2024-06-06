@@ -520,7 +520,7 @@ a {
 .reviews-slider {
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 3rem;
+  gap: 10rem;
   width: 100%;
   padding: 2rem;
   display: flex;
