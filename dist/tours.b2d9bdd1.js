@@ -1,6 +1,6 @@
 let btns = document.querySelectorAll(".tour-button");
 function getData() {
-    fetch("https://run.mocky.io/v3/c4b1c4d2-4609-462d-92f6-3028807e9f12").then(function(response) {
+    fetch("https://run.mocky.io/v3/96104cfc-9c41-48b4-bddf-337ec0def884").then(function(response) {
         return response.json();
     }).then(function(data) {
         btns.forEach((element)=>{

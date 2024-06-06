@@ -404,14 +404,18 @@ a {
   display: flex;
 }
 
+.announcement .frame {
+  width: 350px;
+  margin: 2rem;
+}
+
 .item {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 0 0 0 100px;
+  border-radius: 0 100px;
   flex-direction: column;
   justify-content: flex-end;
-  max-width: 465px;
   height: 615px;
   margin: -1rem -1rem 1rem 1rem;
   display: flex;
@@ -482,7 +486,6 @@ a {
 .frame {
   border: 2px solid #fc5521;
   border-radius: 0 100px;
-  max-width: 455px;
 }
 
 @media (width >= 992px) {
@@ -490,8 +493,6 @@ a {
     background-color: #1d4049;
     border-radius: 0 100px;
     flex-direction: column;
-    width: 495px;
-    margin: -1rem -1rem 1rem 1rem;
     display: flex;
   }
 }
