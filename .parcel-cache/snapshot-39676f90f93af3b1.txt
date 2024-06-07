@@ -6,7 +6,7 @@
 79C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\src\img\gallery\winter-runa-bg.png133620406085294177 0
 88C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\node_modules\semver\internal\identifiers.js133620622131889359 0
 73C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\node_modules\chalk\readme.md133620622061596744 0
-49C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\dist133622312333535739 1
+49C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\dist133622313838679915 1
 75C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\dist\heading-line.fae89e5d.svg133622307922338605 0
 78C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\node_modules\stable\stable.min.js133620622040790643 0
 113C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\node_modules\@swc\helpers\_\_class_private_field_update\package.json133620622341045609 0
@@ -140,7 +140,7 @@
 130C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\scope\default.js133620622222426553 0
 80C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\dist\left-slider-arrow.b4c035c2.png133622307923340856 0
 89C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\src\img\selected-tours-posters\poster-3.jpeg133620406085534102 0
-68C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\dist\index.55ab883c.css133622312333515804 0
+68C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\dist\index.55ab883c.css133622313838649924 0
 97C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\node_modules\@parcel\transformer-babel\src\config.js133620622096364850 0
 73C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\node_modules\posthtml-render133620622045680235 1
 59C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\dist\img\promo133622307925706799 1
@@ -688,7 +688,7 @@
 130C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages-test133620622522637432 0
 106C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\node_modules\@swc\helpers\src\_apply_decorated_descriptor.mjs133620622370449882 0
 94C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\node_modules\node-addon-api\napi-inl.deprecated.h133620622062923096 0
-67C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\src\style\_header.scss133622312332155511 0
+67C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\src\style\_header.scss133622313837421200 0
 90C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\node_modules\css-tree\lib\generator\create.js133620622332994347 0
 112C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\node_modules\caniuse-lite\data\features\wasm-nontrapping-fptoint.js133620622521644113 0
 87C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\node_modules\update-browserslist-db\cli.js133620622009365007 0
@@ -6193,4 +6193,4 @@
 73C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\node_modules\.bin\semver.ps1133620622522627432 0
 67C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\node_modules\.bin\svgo133620622522627432 0
 85C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\node_modules\.bin\update-browserslist-db133620622522637432 0
-72C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\dist\index.55ab883c.css.map133622312333535739 0
+72C:\Users\sereg\OneDrive\Desktop\Grofa-Travel\dist\index.55ab883c.css.map133622313838679915 0

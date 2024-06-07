@@ -4,6 +4,7 @@
   height: 100vh;
   background-image: url("../img/header/header-bg.jpeg");
   @include background(cover, center, no-repeat);
+  position: relative;
 }
 
 .nav-bar {
@@ -122,7 +123,7 @@
 }
 
 .header-title {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 230px;
   right: 0;
