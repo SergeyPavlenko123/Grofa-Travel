@@ -64,7 +64,9 @@ function getData() {
             >
               <div class="offcanvas-header">
                 <div class="logo">
-                  <img src="../img/header/Logo.png" alt="" />
+                  <a href="./index.html">
+                    <img src="../src/img/header/Logo.png" alt="" />
+                  </a>
                 </div>
                 <button
                   type="button"
