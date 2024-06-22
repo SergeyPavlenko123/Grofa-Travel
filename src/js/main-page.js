@@ -3,12 +3,13 @@ let tours = [];
 let favTours = [];
 
 function showSlider() {
-  fetch("https://run.mocky.io/v3/d641e9e9-a20a-4854-8244-1cf80e759ff7")
+  fetch("https://run.mocky.io/v3/952980e8-b147-44eb-95c5-dc2b66ee8011")
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
       tours = data;
+      console.log(tours);
     })
     .then(function () {
       for (let i = 0; i < tours.length; i++) {
